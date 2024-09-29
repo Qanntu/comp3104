@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - "20.17.0"  # Especifica la versión de Node.js que deseas usar
+
+# Opcional: Cachea los módulos de Node para acelerar las construcciones futuras
+cache:
+  directories:
+    - node_modules
+
+# Comando para instalar las dependencias
+install:
+  - npm install
+
+# Comando para ejecutar las pruebas
+script:
+  - npm test
