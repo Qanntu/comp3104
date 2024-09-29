@@ -1,21 +1,11 @@
 language: node_js
 node_js:
-  - 20.17.0
-  cache: npm
-
-# Instalar dependencias del proyecto
-install:
-  - npm ci
-
-# Ejecutar las pruebas
-script:
-  - npm test
-  - npm run build
-
-deploy: 
+  - "stable"
+deploy:
   provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
+  skip_cleanup: true
+  github_token: $github_token
+  local_dir: build
   on:
-     branch: gh-pages
+    branch: main
 
