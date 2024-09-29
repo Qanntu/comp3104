@@ -1,0 +1,17 @@
+[33mcommit c25baa71d16252c18bb76bf0c667afcc407bbfd5[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Qanntu <146568971+Qanntu@users.noreply.github.com>
+Date:   Sun Sep 29 03:56:57 2024 -0400
+
+    ci github action added
+
+[33mcommit bd21e0220112b594c7393ac452a5b9e98347dfb9[m
+Author: Qanntu <146568971+Qanntu@users.noreply.github.com>
+Date:   Sat Sep 21 13:40:55 2024 -0400
+
+    .travis.yml file added
+
+[33mcommit 6bf36351ddb4759c1797dc342095b6812366b1ce[m
+Author: Qanntu <146568971+Qanntu@users.noreply.github.com>
+Date:   Wed Sep 11 19:43:32 2024 -0400
+
+    added header for readme
