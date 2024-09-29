@@ -1,16 +1,17 @@
 language: node_js
 node_js:
-  - "20.17.0"  # Especifica la versión de Node.js que deseas usar
+  - "20.17.0"
 
-# Opcional: Cachea los módulos de Node para acelerar las construcciones futuras
-cache:
-  directories:
-    - node_modules
+# Añadir comandos para actualizar el sistema
+before_install:
+  - sudo apt-get update  # Actualiza la lista de paquetes
+  - sudo apt-get install -y build-essential  # Instala herramientas esenciales de construcción
+  - sudo apt-get install -y libc6  # Instala o actualiza la biblioteca GLIBC
 
-# Comando para instalar las dependencias
+# Instalar dependencias del proyecto
 install:
   - npm install
 
-# Comando para ejecutar las pruebas
+# Ejecutar las pruebas
 script:
   - npm test
